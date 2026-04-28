@@ -3916,36 +3916,4 @@ if(!sessionUnlocked){
     C('profile-overlay').style.display = 'none';
   }
 }
-</script><script type="module">
-  // Import Firebase t? CDN (QUAN TR?NG)
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
-  // Firebase config c?a b?n
-  const firebaseConfig = {
-    apiKey: "AIzaSyDSr72uFa5IANR-0aftbluJoCmt5w2_6cw",
-    authDomain: "garden-13145.firebaseapp.com",
-    projectId: "garden-13145",
-    storageBucket: "garden-13145.firebasestorage.app",
-    messagingSenderId: "55519582657",
-    appId: "1:55519582657:web:24841b1a9126349a5f7740",
-    measurementId: "G-YEFCYLBE9X"
-  };
-
-  // Kh?i t?o Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  // TEST: luu du lieu lên Firestore
-  async function saveTest() {
-    await addDoc(collection(db, "students"), {
-      name: "Nhi test",
-      score: 10,
-      time: new Date()
-    });
-    alert("?ã l?u thành công!");
-  }
-
-  // G?i th?
-  saveTest();
 </script></body></html>
